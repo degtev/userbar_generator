@@ -51,20 +51,20 @@ $backgrounds = dirFiles(WORK_DIR . SEP . 'resources' . SEP . $type . SEP . 'imag
     <div class="s-game">Для игры: ???</div>
 </div>
 <ul class="main-nav">
-    <li><a href="http://юзер-бар.рф/">Главная</a></li>
-    <li><a href="http://юзер-бар.рф/logotype/index.php">Генератор <span>логотипов</span></a></li>
-    <li><a href="http://юзер-бар.рф/pebulator.php">Пэбулятор</a></li>
-    <li><a href="http://юзер-бар.рф/gallery/index.php">Галерея</a></li>
-    <li><a href="http://юзер-бар.рф/comments.php">Комментарии</a></li>
+    <li><a href="/">Главная</a></li>
+    <li><a href="/logotype/index.php">Генератор <span>логотипов</span></a></li>
+    <li><a href="/pebulator.php">Пэбулятор</a></li>
+    <li><a href="/gallery/index.php">Галерея</a></li>
+    <li><a href="/comments.php">Комментарии</a></li>
 </ul>
 <div class="wrapper">
 <div class="tabs-divider"><span>All Points Bulletin</span></div>
 
 <div id="game">
-  <div id="imgsize">	
+  <div id="imgsize">
 					<div class="sizelink"><a href="/apb/generator.php?type=1" target="_blank">350 x 100</a></div>
 					<div class="sizelink"><a href="/apb/generator.php?type=2" target="_blank">350 x 100 <b>#2</b></a></div>
-	</div>	
+	</div>
  <div id="generator-block">
  <div style="width: 900px; margin: 0px auto">
             <div class="main_block">
@@ -97,31 +97,6 @@ $backgrounds = dirFiles(WORK_DIR . SEP . 'resources' . SEP . $type . SEP . 'imag
 <span style="font-family: Tahoma; font-size: 14px; color:#a1a1a1; position: relative; top: 40px; left: 320px;">© Онлайн генератор юзербаров «Юзер-Бар» 2011-2013г.</span>
 </div>
 </div>
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-(function (d, w, c) {
-    (w[c] = w[c] || []).push(function() {
-        try {
-            w.yaCounter18762988 = new Ya.Metrika({id:18762988,
-                    clickmap:true,
-                    trackLinks:true,
-                    accurateTrackBounce:true});
-        } catch(e) { }
-    });
-    var n = d.getElementsByTagName("script")[0],
-        s = d.createElement("script"),
-        f = function () { n.parentNode.insertBefore(s, n); };
-    s.type = "text/javascript";
-    s.async = true;
-    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
-    if (w.opera == "[object Opera]") {
-        d.addEventListener("DOMContentLoaded", f, false);
-    } else { f(); }
-})(document, window, "yandex_metrika_callbacks");
-</script>
-<noscript><div><img src="//mc.yandex.ru/watch/18762988" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
+
 </body>
 </html>
-
- 
