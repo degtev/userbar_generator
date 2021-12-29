@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<head>
+<style>
+html{
+background:#fefefe;
+padding:0;
+margin:0;
+}
+.content{
+margin: 0 auto;
+width:1000px;
+}
+table{
+font-family:Verdana;
+font-size:12px;
+color:#282828
+}
+table tr td{
+padding:8px;
+}
+table tr{
+border-bottom:1px solid #282828;
+}
+table tr.event{
+background:#f0f0f0;
+}
+table th{
+font-weight:100;
+color:#818181;
+}
+</style>
+</head>
+<body>
+<div class="content">
+<span>Файловая структура:</span>
+<br/>
+<table cellspacing="0">
+<th>Папка/Файл</th><th>Описание</th>
+	<tr class="event">
+		<td><span style="color:green;">[D]</span>files</td><td>Директория с основными файлами "css","js","images"</td>
+	</tr>
+	<tr>
+		<td><span style="color:red;">[F]</span>files/js/main.js</td><td>Формирует вывод сгенерированной картинки</td>
+	</tr>
+	<tr class="event">
+		<td><span style="color:green;">[D]</span>resources</td><td>Директория с файлами юзербаров</td>
+	</tr>
+	<tr>
+		<td><span style="color:green;">[D]</span>tmp</td><td>Директория с пользовательскими файлами (загруженными изображениямии)</td>
+	</tr>
+	<tr class="event">
+		<td><span style="color:red;">[F]</span>crop.php</td><td>Обработка вырезанной картинки</td>
+	</tr>
+	<tr>
+		<td><span style="color:red;">[F]</span>generator.php</td><td>Аналог индексной страницы, содержащий сам вызов генератора и все исходные параметры страницы</td>
+	</tr>
+	<tr class="event">
+		<td><span style="color:red;">[F]</span>img.php</td><td>Определяем все функции генератора</td>
+	</tr>
+	<tr>
+		<td><span style="color:red;">[F]</span>savedata.php</td><td>Определяем все иконки, шрифты, etc..</td>
+	</tr>
+	<tr class="event">
+		<td><span style="color:red;">[F]</span>upload.php</td><td>Загрузка пользовательских изображений</td>
+	</tr>
+</table>
+<br/><br/><br/>
+<span>Добавляем новый генератор</span>
+<br/><br/>
+<table>
+	<tr>
+		<td>Шаг №1</td><td>*Идем <u>includes/config.php</u></br>
+		*Добавляем новый массив конфигураций юзербара,</br>
+		формата key => value<br/>
+		1 => array('width' => 468,'height' => 60,'icon1_x' => 350,'icon1_y' => 0, ... ));
+		</td>
+	</tr>
+	<tr>
+		<td>Шаг №2</td><td>*Идем <u>resources</u> дублируем директорию, и настраиваем во вложениях содержимое и шаблон</td>
+	</tr>
+</table>
+
+
+</div>
+</body>
+</html>

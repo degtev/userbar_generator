@@ -1,0 +1,655 @@
+@font-face {
+    font-family: aga; 
+	src: url('/fonts/aga.otf');
+}
+@charset "utf-8";
+/* Простой «резиновый» носитель
+   Примечание. Для «резинового» носителя требуется удалить атрибуты высоты и ширины из HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE6 не поддерживает атрибут max-width, поэтому по умолчанию используется ширина 100 % */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Свойства Dreamweaver Fluid Grid
+	----------------------------------
+	dw-num-cols-mobile:		5;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	10;
+	dw-gutter-percentage:	100;
+	
+	Вдохновлено книгой «Отзывчивый веб-дизайн» (Responsive Web Design) Итана Маркота (Ethan Marcote) 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	и системой Golden Grid Джони Корпи (Joni Korpi)
+	http://goldengridsystem.com/
+*/
+body{
+	background: #fafafa url(../images/head-bg.png) repeat-x;;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+.gridContainer {
+	width: 100%;
+	max-width: 1000px;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin: auto;
+}
+#wrapper {
+	clear: both;
+	float: left;
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+#head{
+	width: 380px;
+	height: 124px;
+	position: relative;
+	top: 1px;
+	left: 310px;;
+	background: url(../images/head-logo.png);
+}
+.logotype{
+	position: relative;
+	top: 15px;
+	left: 45px;
+	width:	290px;
+	height: 76px;
+	background:url(../images/logo.png);
+	background-position: 0 -1px;
+}
+.logotype:hover{
+	background:url(../images/logo.png);
+	background-position: 0 -77px;
+}
+.separator-left{
+	border-right: 1px solid #e1e1e1;
+	height: 110px;
+	position: relative;
+	top: -128px;
+	left: 700px;
+	max-width: 2px;
+	max-height: 110px;
+}
+.separator-left2{
+	border-right: 1px solid #e1e1e1;
+	height: 110px;
+	position: relative;
+	top: -238px;
+	left: 850px;
+	max-width: 2px;
+	max-height: 110px;
+}
+.separator-left3{
+	border-right: 1px solid #e1e1e1;
+	height: 110px;
+	position: relative;
+	top: -348px;
+	left: 1000px;
+	max-width: 2px;
+	max-height: 110px;
+}
+.separator-right{
+	border-right: 1px solid #e1e1e1;
+	height: 110px;
+	position: relative;
+	top: -458px;
+	left: 295px;
+	max-width: 2px;
+	max-height: 110px;
+}
+.separator-right2{
+	border-right: 1px solid #e1e1e1;
+	height: 110px;
+	position: relative;
+	top: -568px;
+	left: 145px;
+	max-width: 2px;
+	max-height: 110px;
+}
+.separator-right3{
+	border-right: 1px solid #e1e1e1;
+	height: 110px;
+	position: relative;
+	top: -678px;
+	left: 0px;
+	max-width: 2px;
+	max-height: 110px;
+}
+.nav1{
+	position: relative;
+	top: -738px;
+	left:0px;
+	max-width: 100px;
+	text-align: center;
+}
+.nav1 a{
+	
+	color:#282828;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	text-decoration:none;
+	padding-left: 45px;
+	padding-right: 45px;
+	padding-top: 50px;
+	padding-bottom: 45px;
+	transition: color 0.3s ease;
+	-webkit-transition: color 0.3s ease;
+	-moz-transition: color 0.3s ease;
+	-o-transition: color 0.3s ease;
+}
+.nav1 a:hover{
+	color:#0693ff;
+}
+
+.nav2{
+	position: relative;
+	top: -755px;
+	left:150px;
+	max-width: 100px;
+	text-align: center;
+}
+.nav2 a{
+	
+	color:#282828;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	text-decoration:none;
+	padding-left: 45px;
+	padding-right: 45px;
+	padding-top: 50px;
+	padding-bottom: 45px;
+	transition: color 0.3s ease;
+	-webkit-transition: color 0.3s ease;
+	-moz-transition: color 0.3s ease;
+	-o-transition: color 0.3s ease;
+}
+.nav2 a:hover{
+	color:#0693ff;
+}
+.nav3{
+	position: relative;
+	top: -770px;
+	left:703px;
+	max-width: 100px;
+	text-align: center;
+}
+.nav3 a{
+	
+	color:#282828;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	text-decoration:none;
+	padding-left: 45px;
+	padding-right: 45px;
+	padding-top: 50px;
+	padding-bottom: 45px;
+	transition: color 0.3s ease;
+	-webkit-transition: color 0.3s ease;
+	-moz-transition: color 0.3s ease;
+	-o-transition: color 0.3s ease;
+}
+.nav3 a:hover{
+	color:#0693ff;
+}
+.nav4{
+	position: relative;
+	top: -788px;
+	left: 845px;
+	max-width: 100px;
+	text-align: center;
+}
+.nav4 a{
+	
+	color:#282828;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	text-decoration:none;
+	padding-left: 45px;
+	padding-right: 45px;
+	padding-top: 50px;
+	padding-bottom: 45px;
+	transition: color 0.3s ease;
+	-webkit-transition: color 0.3s ease;
+	-moz-transition: color 0.3s ease;
+	-o-transition: color 0.3s ease;
+}
+.nav4 a:hover{
+	color:#0693ff;
+}
+
+.blog{
+	position: relative;
+	top: -732px;
+	left: 347px;
+	width: 150px;
+	height: 40px;
+	max-height: 40px;	
+	background: #e1e1e1;
+	border: 1px solid #e1e1e1;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	transition: background 0.3s ease;
+	-webkit-transition: background 0.3s ease;
+	-moz-transition: background 0.3s ease;
+	-o-transition: background 0.3s ease;
+}
+.blog t{
+	position: relative;
+	left: 60px;
+	top: 12px;
+}
+.blog t, a{
+	text-decoration: none;	
+	color: #282828;
+}
+.blog:hover{
+	background:#0693ff;
+	border: 1px solid #e1e1e1;
+}
+.friends{
+	position: relative;
+	top: -774px;
+	left: 505px;
+	width: 150px;
+	height: 40px;	
+	max-height: 40px;
+	background: #e1e1e1;
+	border: 1px solid #e1e1e1;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	transition: background 0.3s ease;
+	-webkit-transition: background 0.3s ease;
+	-moz-transition: background 0.3s ease;
+	-o-transition: background 0.3s ease;
+}
+.friends t{
+	position: relative;
+	top: 12px;	
+	left: 25px;
+}
+.friends t, a{
+	text-decoration: none;	
+	color: #282828;
+}
+.friends:hover{
+	background:#0693ff;
+	border: 1px solid #e1e1e1;
+}
+.make{
+	font-family: aga;
+	font-size: 33px;
+	color: #0693ff;
+	position: relative;	
+	top: -720px;
+	left: 375px;
+	max-width: 500px;
+	max-height: 50px;
+}
+.sep-make-l{
+border-bottom: 1px solid #e1e1e1;
+width: 350px;
+max-height: 2px;
+top: -740px;
+position: relative;	
+}
+.sep-make-r{
+border-bottom: 1px solid #e1e1e1;
+width: 350px;
+max-height: 2px;
+top: -740px;
+left: 650px;
+position: relative;	
+}
+#game{
+	position: relative;
+	max-width: 730px;
+	max-height: 730px;
+	top: -675px;
+	left: 135px;
+	margin-bottom: -1000px;
+}
+.games{
+	display: inline-block;
+	margin: 15px 15px 15px 15px;
+	position: relative;
+	width: 200px;
+	height: 200px;
+	border: 5px solid #e1e1e1;
+	background:#dbdbdb;
+	transition: border 0.3s ease;
+	-webkit-transition: border 0.3s ease;
+	-moz-transition: border 0.3s ease;
+	-o-transition: border 0.3s ease;
+}
+.games:hover{
+	border: 5px solid #0693ff;
+}
+.games1{
+	height: 200px;
+	width: 200px;
+	background:url(../images/games/point-blank.png);
+	background-position: 0 0px;
+	transition: background 0.3s ease;
+	-webkit-transition: background 0.3s ease;
+	-moz-transition: background 0.3s ease;
+	-o-transition: background 0.3s ease;
+}
+.games1:hover{
+	background-position: 0 -200px;
+}
+.games2{
+	height: 200px;
+	width: 200px;
+	background:url(../images/games/lineage2.png);
+	background-position: 0 0px;
+	transition: background 0.3s ease;
+	-webkit-transition: background 0.3s ease;
+	-moz-transition: background 0.3s ease;
+	-o-transition: background 0.3s ease;
+}
+.games2:hover{
+	background-position: 0 -200px;
+}
+.games3{
+	height: 200px;
+	width: 200px;
+	background:url(../images/games/aion.png);
+	background-position: 0 0px;
+	transition: background 0.3s ease;
+	-webkit-transition: background 0.3s ease;
+	-moz-transition: background 0.3s ease;
+	-o-transition: background 0.3s ease;
+}
+.games3:hover{
+	background-position: 0 -200px;
+}
+.games4{
+	height: 200px;
+	width: 200px;
+	background:url(../images/games/apb.png);
+	background-position: 0 0px;
+	transition: background 0.3s ease;
+	-webkit-transition: background 0.3s ease;
+	-moz-transition: background 0.3s ease;
+	-o-transition: background 0.3s ease;
+}
+.games4:hover{
+	background-position: 0 -200px;
+}
+.games5{
+	height: 200px;
+	width: 200px;
+	background:url(../images/games/point-blank2.png);
+	background-position: 0 0px;
+	transition: background 0.3s ease;
+	-webkit-transition: background 0.3s ease;
+	-moz-transition: background 0.3s ease;
+	-o-transition: background 0.3s ease;
+}
+.games5:hover{
+	background-position: 0 -200px;
+}
+.games6{
+	height: 200px;
+	width: 200px;
+	background:url(../images/games/coming-soon.png);
+	background-position: 0 0px;
+	transition: background 0.3s ease;
+	-webkit-transition: background 0.3s ease;
+	-moz-transition: background 0.3s ease;
+	-o-transition: background 0.3s ease;
+}
+.games6:hover{
+	background-position: 0 -200px;
+}
+#social{
+	position: relative;
+	top: 400px;
+	border: 4px solid #e1e1e1;
+	max-height: auto ;
+	max-width: 400px;
+	left: 440px;
+	transition: border 0.3s ease;
+	-webkit-transition: border 0.3s ease;
+	-moz-transition: border 0.3s ease;
+	-o-transition: border 0.3s ease;
+}
+
+#social:hover{
+	border:4px solid #0693ff;	
+}
+
+.bottommenuico1{
+	position: relative;
+	top: -70px;
+	left: 160px;
+	width: 30px;
+	height: 30px;
+	background:url(../images/vk.png);
+	background-position: 0 -30px;
+	transition: background 0.3s ease;
+	-webkit-transition: background 0.3s ease;
+	-moz-transition: background 0.3s ease;
+	-o-transition: background 0.3s ease;
+}
+.bottommenuico1:hover{
+	background:url(../images/vk.png);
+	background-position: 0 0px;
+}
+.bottommenuico1 a, txt{
+	position: relative;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #282828;
+	text-decoration: none;
+		transition: color 0.3s ease;
+	-webkit-transition: color 0.3s ease;
+	-moz-transition: color 0.3s ease;
+	-o-transition: color 0.3s ease;
+}
+.bottommenuico1 a, txt:hover{
+	position: relative;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #0693ff;
+	text-decoration: none;
+}
+.bottommenuico1 txt1{
+	position: relative;
+	left: 40px;
+	top: 9px;	
+}
+.bottommenuico2{
+	position: relative;
+	top: -50px;
+	left: 160px;
+	width: 30px;
+	height: 30px;
+	background:url(../images/mail.png);
+	background-position: 0 -30px;
+	transition: background 0.3s ease;
+	-webkit-transition: background 0.3s ease;
+	-moz-transition: background 0.3s ease;
+	-o-transition: background 0.3s ease;
+}
+.bottommenuico2:hover{
+	background:url(../images/mail.png);
+	background-position: 0 0px;
+}
+.bottommenuico2 a, txt{
+	position: relative;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #282828;
+	text-decoration: none;
+		transition: color 0.3s ease;
+	-webkit-transition: color 0.3s ease;
+	-moz-transition: color 0.3s ease;
+	-o-transition: color 0.3s ease;
+}
+.bottommenuico2 a, txt:hover{
+	position: relative;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #0693ff;
+	text-decoration: none;
+}
+.bottommenuico2 txt1{
+	position: relative;
+	left: 40px;
+	top: 9px;	
+}
+.bottommenuico3{
+	position: relative;
+	top: -30px;
+	left: 160px;
+	width: 30px;
+	height: 30px;
+	background:url(../images/skype.png);
+	background-position: 0 -30px;
+	transition: background 0.3s ease;
+	-webkit-transition: background 0.3s ease;
+	-moz-transition: background 0.3s ease;
+	-o-transition: background 0.3s ease;
+}
+.bottommenuico3:hover{
+	background:url(../images/skype.png);
+	background-position: 0 0px;
+}
+.bottommenuico3 a, txt{
+	position: relative;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #282828;
+	text-decoration: none;
+	transition: color 0.3s ease;
+	-webkit-transition: color 0.3s ease;
+	-moz-transition: color 0.3s ease;
+	-o-transition: color 0.3s ease;
+}
+.bottommenuico3 a, txt:hover{
+	position: relative;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #0693ff;
+	text-decoration: none;
+}
+.bottommenuico3 txt1{
+	position: relative;
+	left: 40px;
+	top: 9px;	
+}
+.soc-deparator{
+	border-right: 1px dashed #a1a1a1;
+	position: relative;
+	height: 250px;
+	top: 120px;
+	right: 850px;
+}
+#footer{
+	position: relative;
+	top: 150px;
+	min-height:100px;
+	width: 100%;
+	background: #282828;	
+}
+.footer{
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #a1a1a1;
+	position: relative;
+	top: 265px;	
+	text-align: center;
+}
+.foot-logo{
+	position: relative;
+	width:	180px;
+	height: 51px;
+	top: 230px;
+	background:url(../images/foot-logo.png);
+	opacity: 0.3;
+	transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
+}
+.foot-logo:hover{
+	opacity: 1;	
+}
+#generator-block{
+margin-bottom: -900px;
+position: relative;
+top: -650px;
+}
+#imgsize{
+	text-align: center;
+	position: relative;
+	top: -700px;
+}
+.sizelink{
+	display: inline-block;
+}
+.sizelink a{
+	display: inline-block;
+	background: #e1e1e1;
+	color:#282828;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-radius: 3px;
+	border: 1px solid #fafafa;
+		transition:  all 0.3s ease;
+	-webkit-transition:  all 0.3s ease;
+	-moz-transition:  all 0.3s ease;
+	-o-transition:  all 0.3s ease;
+}
+.sizelink a:hover{
+	color: #fff;
+	background: #0693ff;
+}
+
+.commentbtn{
+	background: #e1e1e1;
+	border: none;
+position: relative;
+top: 350px;
+	width: 200px;
+	height: 40px;
+	border-radius: 4px;
+	color: #282828;
+              text-align:center;
+	transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+}
+.commentbtn txt{
+position: relative;
+top: 10px;
+color: #282828;
+font-size: 16px;
+padding-left: 15px;
+padding-right: 15px;
+paddin-top: 10px;
+padding-bottom: 10px;
+transition: all 0.3s ease;
+-webkit-transition: all 0.3s ease;
+-moz-transition: all 0.3s ease;
+-o-transition: all 0.3s ease;
+}
+.commentbtn txt:hover{
+color: #fff;
+}
+
+.commentbtn:hover{
+	background: #0693ff;
+	color: white;
+}
+
+

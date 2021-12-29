@@ -1,0 +1,139 @@
+div.main_block {
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	text-align:center;
+    border: none;
+    background: transparent;
+    margin: 0px;
+	color: #0693ff;
+    padding: 3px;
+    -moz-border-radius: 5px; 
+    -khtml-border-radius: 5px; 
+    -webkit-border-radius: 5px; 
+    border-radius: 10px;
+}
+
+fieldset.rounded {
+font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+    background: #e1e1e1;
+	color: #282828;
+    margin: 2px;
+    padding: 5px;
+    display:block;
+	border-radius: 4px;
+}
+
+/*элементы формы*/
+.input_text {
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -khtml-border-radius: 3px; 
+    border: 1px solid transparent;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    background: #0693ff;
+    color: #fff;
+    padding: 2px;
+    vertical-align: middle;
+    width: 100px;
+}
+.input_button {
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -khtml-border-radius: 4px; 
+    border: none;
+    height: 26px;
+    line-height: 20px;
+    font-size: 14px;
+    background: #e1e1e1;
+    color: #282828;
+    padding: 2px;
+    vertical-align: middle;
+    min-width: 30px;
+    cursor: pointer;
+	transition:  all 0.3s ease;
+	-webkit-transition:  all 0.3s ease;
+	-moz-transition:  all 0.3s ease;
+	-o-transition:  all 0.3s ease;
+}
+.input_button:hover {
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -khtml-border-radius: 4px; 
+    border: none;
+    height: 26px;
+    line-height: 20px;
+    font-size: 14px;
+    background: #0693ff;
+    color: #fff;
+    padding: 2px;
+    vertical-align: middle;
+    min-width: 30px;
+    cursor: pointer;
+}
+.input_radio {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+.input_checkbox {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+.input_textarea {
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -khtml-border-radius: 3px; 
+    border: 1px solid transparent;
+    color: #fff;
+    padding: 2px;
+    background: #0693ff;
+}
+.input_select {
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -khtml-border-radius: 3px; 
+    border: 1px solid #e1e1e1;
+    height: 26px;
+    line-height: 20px;
+    background: #0693ff;
+    color: #fff;
+    min-width: 50px;
+    padding-left: 3px;
+}
+
+#colorSelector {
+    position: relative;
+    width: 36px;
+    height: 36px;
+    background: url(../images/colorpicker/select.png);
+}
+#colorSelector div {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 30px;
+    height: 30px;
+    background: url(../images/colorpicker/select.png) center;
+}
+
+.colorpick {
+    width: 50px;
+    cursor: pointer;
+}
+
+
+
+
+
+

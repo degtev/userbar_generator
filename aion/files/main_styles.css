@@ -1,0 +1,114 @@
+div.main_block {
+    border: 1px solid black;
+    background: whitesmoke;
+    margin: 0px;
+    padding: 2px;
+    -moz-border-radius: 5px; 
+    -khtml-border-radius: 5px; 
+    -webkit-border-radius: 5px; 
+    border-radius: 5px;
+}
+
+fieldset.rounded {
+    border: 1px solid black;
+    background: whitesmoke;
+    margin: 0px;
+    padding: 5px;
+    display:table-cell;
+    -moz-border-radius: 5px; 
+    -khtml-border-radius: 5px; 
+    -webkit-border-radius: 5px; 
+    border-radius: 5px;
+}
+
+/*элементы формы*/
+.input_text {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -khtml-border-radius: 5px; 
+    border: 1px solid black;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    background: white;
+    color: black;
+    padding: 2px;
+    vertical-align: middle;
+    width: 100px;
+}
+.input_button {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -khtml-border-radius: 5px; 
+    border: 1px solid black;
+    height: 26px;
+    line-height: 20px;
+    font-size: 14px;
+    background: lightsteelblue;
+    color: white;
+    padding: 2px;
+    vertical-align: middle;
+    min-width: 30px;
+    cursor: pointer;
+}
+.input_radio {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+.input_checkbox {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+.input_textarea {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -khtml-border-radius: 5px; 
+    border: 1px solid black;
+    color: black;
+    padding: 2px;
+    background: white;
+}
+.input_select {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -khtml-border-radius: 5px; 
+    border: 1px solid black;
+    height: 26px;
+    line-height: 20px;
+    background: white;
+    color: black;
+    min-width: 50px;
+    padding-left: 3px;
+}
+
+#colorSelector {
+    position: relative;
+    width: 36px;
+    height: 36px;
+    background: url(../images/colorpicker/select.png);
+}
+#colorSelector div {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 30px;
+    height: 30px;
+    background: url(../images/colorpicker/select.png) center;
+}
+
+.colorpick {
+    width: 50px;
+    cursor: pointer;
+}
+
+
+
+
+
+
